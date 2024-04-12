@@ -1,3 +1,5 @@
+import uuid
+
 from fastapi import APIRouter, HTTPException
 
 from app.core import DataGenerator, JSONWriter, CSVWriter, YAMLWriter
@@ -28,21 +30,24 @@ async def generate_file(file: File) -> str:
     """Описание."""
 
     data = DataGenerator()
-    mart = data.generate(file.matrix_size)
-    path = 'app/files/task6'
+    matr = data.generate(file.matrix_size)
 
-    json_writer = JSONWriter()
-    xx = json_writer.write(mart)
-    print(xx)
+    file_id = str(uuid.uuid4())
+    path = 'app/files/task6/' + file_id
 
     if file.file_type == 'json':
-        data.to_file(path, json_writer)
+        json_writer = JSONWriter()
+        json_writer.write(matr, path + '.json')
+        #data.to_file(path + '.json', json_data)
     elif file.file_type == 'csv':
-        data.to_file(path, CSVWriter.write())
+        csv_writer = CSVWriter()
+        csv_data = csv_writer.write(matr, path + '.csv')
+        #data.to_file(path + '.csv', csv_data)
     elif file.file_type == 'yaml':
-        data.to_file(path, YAMLWriter.write())
+        yaml_writer = YAMLWriter()
+        yaml_data = yaml_writer.write(matr, path + '.yaml')
+        #data.to_file(path + '.yaml', yaml_data)
     else:
         raise HTTPException(status_code=400, detail="Введен некоректный тип файла. Введите 'json','csv' или 'yaml'")
-    file_id: str = data.file_id
 
-    return "file_id"
+    return file_id

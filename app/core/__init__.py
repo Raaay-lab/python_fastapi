@@ -1,8 +1,12 @@
 import math
+import uuid
 from random import randint
 import zipfile
 from abc import ABC, abstractmethod
 from io import StringIO
+import json
+import csv
+import yaml
 
 alf = {"I": 1,
        "V": 5,
@@ -113,10 +117,11 @@ class BaseWriter(ABC):
     """Абстрактный класс с методом write для генерации файла"""
 
     @abstractmethod
-    def write(self, data: list[list[int, str, float]]) -> StringIO:
+    def write(self, data: list[list[int, str, float]], path) -> StringIO:
         """
         Записывает данные в строковый объект файла StringIO
         :param data: полученные данные
+        :param path: файл
         :return: Объект StringIO с данными из data
         """
         pass
@@ -124,26 +129,27 @@ class BaseWriter(ABC):
 
 class JSONWriter(BaseWriter):
     """Потомок BaseWriter с переопределением метода write для генерации файла в json формате"""
-    def write(self, data: list[list[int, str, float]]) -> StringIO:
+    def write(self, data: list[list[int, str, float]], path):
         """Ваша реализация"""
-        s = StringIO()
-        s.write(str(data))
-        return s
+        with open(path, 'w') as file:
+            json.dump(data, file)
 
 
 class CSVWriter(BaseWriter):
     """Потомок BaseWriter с переопределением метода write для генерации файла в csv формате"""
-    def write(self, data: list[list[int, str, float]]) -> StringIO:
+    def write(self, data: list[list[int, str, float]], path):
         """Ваша реализация"""
-
-        pass
+        with open(path, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(data)
 
 
 class YAMLWriter(BaseWriter):
     """Потомок BaseWriter с переопределением метода write для генерации файла в yaml формате"""
-    def write(self, data: list[list[int, str, float]]) -> StringIO:
+    def write(self, data: list[list[int, str, float]], path):
         """Ваша реализация"""
-        pass
+        with open(path, 'w') as file:
+            yaml.dump(data, file)
 
 
 class DataGenerator:
@@ -172,7 +178,6 @@ class DataGenerator:
         :param path: Путь куда требуется сохранить файл
         :param writer: Одна из реализаций классов потомков от BaseWriter
         """
-
-        """Ваша реализация"""
-        with open(path+'/json.json', 'w') as f:
-            f.write(writer)
+        if not self.data:
+            raise ValueError("No data to write")
+        writer.write(self.data, path)
