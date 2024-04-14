@@ -1,6 +1,5 @@
 from fastapi import APIRouter
 
-
 router = APIRouter(tags=["Стажировка"])
 """
 Задание_1. Удаление дублей

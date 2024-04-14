@@ -1,0 +1,4 @@
+[2024-04-14 14:20:16,390] {task_7.py:43} LOG_LEVEL - INFO | 0.0038971900939941406 | POST | http://127.0.0.1:8000/find_in_different_registers | 200 |
+[2024-04-14 14:20:37,958] {task_7.py:43} LOG_LEVEL - INFO | 0.0 | POST | http://127.0.0.1:8000/find_in_different_registersf | 404 |
+[2024-04-14 14:20:53,618] {task_7.py:43} LOG_LEVEL - INFO | 0.0009999275207519531 | POST | http://127.0.0.1:8000/find_in_different_registers | 422 |
+[2024-04-14 14:21:20,405] {task_7.py:43} LOG_LEVEL - INFO | 0.010037899017333984 | POST | http://127.0.0.1:8000/find_in_different_registers | 422 |
