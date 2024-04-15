@@ -37,10 +37,10 @@ Poetry работает с виртуальными окружениями. Пр
 # Docker
 
 создать файл с пакетами:
-pip freeze > requirements.txt
+`pip freeze > requirements.txt`
 
 построить образ приложения:
-docker build -t task9 . 
+`docker build -t task9 .`
 
 запустить контейнер на 80 порту:
-docker run -d --name task9container -p 80:80 task9
+`docker run -d --name task9container -p 80:80 task9`
