@@ -55,3 +55,149 @@
 [2024-04-15 12:42:13,550] {task_7.py:43} LOG_LEVEL - INFO | 0.019491910934448242 | GET | http://127.0.0.1:8000/new_request | 200 |
 [2024-04-15 12:42:14,266] {task_7.py:43} LOG_LEVEL - INFO | 0.0069692134857177734 | GET | http://127.0.0.1:8000/new_request | 200 |
 [2024-04-15 12:42:15,032] {task_7.py:43} LOG_LEVEL - INFO | 0.0040018558502197266 | GET | http://127.0.0.1:8000/new_request | 200 |
+[2024-04-15 22:34:43,920] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:36:40,838] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:36:45,661] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:36:45,672] {task_7.py:43} LOG_LEVEL - INFO | 0.0020036697387695312 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:36:47,747] {task_7.py:43} LOG_LEVEL - INFO | 0.010002613067626953 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:38:20,624] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:38:24,613] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:38:24,636] {task_7.py:43} LOG_LEVEL - INFO | 0.014134407043457031 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:39:00,533] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:39:04,414] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:39:07,536] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (1,)
+[2024-04-15 22:39:07,547] {task_7.py:43} LOG_LEVEL - INFO | 0.015111446380615234 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:40:05,359] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:40:08,519] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:40:14,182] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (1,)
+[2024-04-15 22:40:14,187] {task_7.py:43} LOG_LEVEL - INFO | 0.010278940200805664 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:40:42,965] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:40:46,744] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:40:51,747] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (1,)
+[2024-04-15 22:40:51,751] {task_7.py:43} LOG_LEVEL - INFO | 0.008577585220336914 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:42:34,211] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:42:39,469] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:42:41,957] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (1,)
+[2024-04-15 22:42:41,975] {task_7.py:43} LOG_LEVEL - INFO | 0.022003889083862305 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:43:05,063] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:43:08,407] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:43:13,707] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:43:17,123] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:43:19,628] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (1,)
+[2024-04-15 22:43:19,632] {task_7.py:43} LOG_LEVEL - INFO | 0.009496450424194336 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:44:25,834] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (1,)
+[2024-04-15 22:44:25,836] {task_7.py:43} LOG_LEVEL - INFO | 0.002997875213623047 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:45:15,051] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:45:19,624] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:47:45,934] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:47:49,577] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 22:47:51,062] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (1,)
+[2024-04-15 22:47:51,067] {task_7.py:43} LOG_LEVEL - INFO | 0.011058330535888672 | GET | http://127.0.0.1:8000/get_users/1 | 200 |
+[2024-04-15 22:47:56,161] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (2,)
+[2024-04-15 22:47:56,163] {task_7.py:43} LOG_LEVEL - INFO | 0.002998828887939453 | GET | http://127.0.0.1:8000/get_users/2 | 200 |
+[2024-04-15 22:47:59,255] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (3,)
+[2024-04-15 22:47:59,258] {task_7.py:43} LOG_LEVEL - INFO | 0.0037670135498046875 | GET | http://127.0.0.1:8000/get_users/3 | 200 |
+[2024-04-15 23:03:50,009] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:03:53,623] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:06:25,412] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:06:30,867] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:06:36,680] {postgres.py:189} LOG_LEVEL - DEBUG Query: DELETE FROM users WHERE users.person_code = $1 Args: (3,)
+[2024-04-15 23:06:36,690] {task_7.py:43} LOG_LEVEL - INFO | 0.013232707977294922 | DELETE | http://127.0.0.1:8000/del_users/3 | 200 |
+[2024-04-15 23:13:03,605] {task_7.py:43} LOG_LEVEL - INFO | 0.0012176036834716797 | POST | http://127.0.0.1:8000/add_users | 200 |
+[2024-04-15 23:13:03,744] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:13:07,079] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:13:12,918] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('Dany', '2002-02-15', 'Smith', 3)
+[2024-04-15 23:13:22,781] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('Dany', '2002-02-15', 'Smith', 7)
+[2024-04-15 23:16:01,041] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:16:04,502] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:16:37,491] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('Dany', '2002-02-15', 'Smith', 99)
+[2024-04-15 23:16:52,706] {task_7.py:43} LOG_LEVEL - INFO | 0.0008893013000488281 | GET | http://127.0.0.1:8000/docs | 200 |
+[2024-04-15 23:16:53,146] {task_7.py:43} LOG_LEVEL - INFO | 0.031998634338378906 | GET | http://127.0.0.1:8000/openapi.json | 200 |
+[2024-04-15 23:17:42,294] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('Dany', '14-01-2021', 'Smith', 99)
+[2024-04-15 23:18:44,821] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('Dany', '14-01-2021', 'Smith', 99)
+[2024-04-15 23:19:37,610] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('string', '01-01-2020', 'string', 99)
+[2024-04-15 23:20:02,278] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('string', '01-01-2020', 'string', 99)
+[2024-04-15 23:20:09,777] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('string', '01-01-2020', 'string', 99)
+[2024-04-15 23:20:10,862] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('string', '01-01-2020', 'string', 99)
+[2024-04-15 23:20:22,126] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:21:42,822] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:21:43,931] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:21:58,991] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:24:29,079] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-15 23:24:36,830] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:01:07,114] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:01:12,033] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (3,)
+[2024-04-16 12:01:12,079] {task_7.py:43} LOG_LEVEL - INFO | 0.05025744438171387 | GET | http://127.0.0.1:8000/get_users/3 | 200 |
+[2024-04-16 12:01:18,434] {postgres.py:189} LOG_LEVEL - DEBUG Query: SELECT users.person_code, users.first_name, users.last_name, users.hiredate FROM users WHERE users.person_code = $1 Args: (4,)
+[2024-04-16 12:01:18,446] {task_7.py:43} LOG_LEVEL - INFO | 0.012628316879272461 | GET | http://127.0.0.1:8000/get_users/4 | 200 |
+[2024-04-16 12:01:33,863] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('string', '01-01-2020', 'string', 99)
+[2024-04-16 12:01:57,483] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '01-01-2020', 'zakharov', 99)
+[2024-04-16 12:03:53,045] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020-01-01', 'zakharov', 99)
+[2024-04-16 12:04:05,174] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020/01/01', 'zakharov', 99)
+[2024-04-16 12:04:11,069] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020.01.01', 'zakharov', 99)
+[2024-04-16 12:08:07,260] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020-01-01', 'zakharov', 99)
+[2024-04-16 12:08:11,349] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020-01-01', 'zakharov', 90)
+[2024-04-16 12:08:58,562] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020-01-01', 'zakharov', 90)
+[2024-04-16 12:09:00,091] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:09:05,561] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:09:07,350] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020-02-02', 'zakharov', 90)
+[2024-04-16 12:10:21,842] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:10:25,383] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:11:21,596] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:11:24,324] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:12:00,151] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:12:02,830] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:13:19,675] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:13:22,726] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:14:28,813] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:14:31,976] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:15:28,346] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:15:31,489] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:15:52,918] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:15:57,181] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:16:06,190] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:16:10,271] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:17:02,287] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:17:05,628] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:30:58,020] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:31:01,137] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:32:09,496] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:32:12,473] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:34:06,864] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:34:09,916] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:34:21,709] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020-01-01', 'zakharov', 90)
+[2024-04-16 12:34:59,486] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:35:03,125] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:35:05,735] {postgres.py:189} LOG_LEVEL - DEBUG Query: INSERT INTO users (person_code, first_name, last_name, hiredate) VALUES ($4, $1, $3, $2) Args: ('pavel', '2020-01-01', 'zakharov', 90)
+[2024-04-16 12:36:41,295] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:36:45,062] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:37:51,323] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:37:54,259] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:38:36,761] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:38:40,883] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:38:57,628] {task_7.py:43} LOG_LEVEL - INFO | 0.04079294204711914 | GET | http://127.0.0.1:8000/openapi.json | 200 |
+[2024-04-16 12:39:00,416] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:39:03,924] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:40:39,935] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:40:43,712] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:41:15,715] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:41:19,959] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:42:08,954] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:42:11,916] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:42:15,048] {task_7.py:43} LOG_LEVEL - INFO | 0.06702733039855957 | POST | http://127.0.0.1:8000/add_users | 200 |
+[2024-04-16 12:42:47,443] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:43:43,614] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:45:42,453] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:45:45,502] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:46:18,909] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:46:22,156] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:46:23,828] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:46:28,588] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:46:46,516] {postgres.py:189} LOG_LEVEL - DEBUG Query: UPDATE users SET first_name=$1, last_name=$3, hiredate=$2 WHERE users.person_code = $4 Args: ('PppPPpPPpavel', '2020-01-01', 'zakharov', 90)
+[2024-04-16 12:46:52,399] {postgres.py:189} LOG_LEVEL - DEBUG Query: UPDATE users SET first_name=$1, last_name=$3, hiredate=$2 WHERE users.person_code = $4 Args: ('PppPPpavel', '2020-01-01', 'zakharov', 90)
+[2024-04-16 12:48:15,949] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:48:20,109] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:48:20,203] {task_7.py:43} LOG_LEVEL - INFO | 0.08599305152893066 | PUT | http://127.0.0.1:8000/upd_users | 200 |
+[2024-04-16 12:48:57,211] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:49:01,247] {core.py:113} LOG_LEVEL - INFO Connected to database postgresql://postgres:********@localhost:5432/USR
+[2024-04-16 12:49:26,124] {core.py:149} LOG_LEVEL - INFO Disconnected from database postgresql://postgres:********@localhost:5432/USR

@@ -1,10 +1,5 @@
 import uvicorn
 from fastapi import FastAPI
-from starlette.applications import Starlette
-from starlette.middleware import Middleware
-from starlette.middleware.cors import CORSMiddleware
-from starlette.middleware.gzip import GZipMiddleware
-from starlette.middleware.trustedhost import TrustedHostMiddleware
 
 from app.routes.task_7 import CustomMiddleware
 
@@ -28,17 +23,15 @@ app.include_router(r_5)
 from app.routes.task_6 import router as r_6
 app.include_router(r_6)
 
-# from app.routes.task_7 import router as r_7
-# app.include_router(r_7)
-#
 from app.routes.task_8 import router as r_8
 app.include_router(r_8)
 #
-# from app.routes.task_11 import router as r_11
-# app.include_router(r_11)
+from app.routes.task_11 import router as r_11
+app.include_router(r_11)
 
 
 app.add_middleware(CustomMiddleware)
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host='0.0.0.0', port=8000)

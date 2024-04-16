@@ -70,3 +70,10 @@ class BigJson(BaseModel):
     """Использует модель User."""
     user: User
     meta: Meta
+
+
+class UserTable(BaseModel):
+    person_code: int
+    first_name: str
+    last_name: str
+    hiredate: str
